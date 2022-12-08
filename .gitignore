@@ -1,0 +1,4 @@
+.env
+/cigar-db_venv
+__pycache__/
+/migrations
