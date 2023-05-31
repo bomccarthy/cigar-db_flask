@@ -25,7 +25,7 @@ def signMeUpAPI():
         return {
             'status': 'not ok',
             'message': 'That Username already belongs to an account.'}
-    elif u1:
+    elif u2:
         return {
             'status': 'not ok',
             'message': 'That Email already belongs to an account.'}
