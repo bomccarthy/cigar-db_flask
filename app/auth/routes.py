@@ -29,6 +29,18 @@ def signMeUpAPI():
         return {
             'status': 'not ok',
             'message': 'That Email already belongs to an account.'}
+    elif len(fname) == 0:
+        return {
+            'status': 'not ok',
+            'message': 'First Name is required.'}
+    elif len(lname) == 0:
+        return {
+            'status': 'not ok',
+            'message': 'Last Name is required.'}
+    elif len(username) == 0:
+        return {
+            'status': 'not ok',
+            'message': 'Username is required.'}
     else:
         user = User(fname, lname, email, username, password)        # add user to database
         user.saveToDB()                                             # add instance to SQL
